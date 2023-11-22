@@ -2,75 +2,75 @@
 import TemplateMenuList from "./TemplateMenuList.astro";
 ---
 
-<header class="bg-white w-full h-auto fixed">
-    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+<header class="fixed w-full h-auto bg-white">
+    <div class="flex items-center justify-between max-w-6xl px-6 py-5 mx-auto">
         <a href="">
             <img src="/images/bonsai_logo.svg" alt="Bonsai icon" width="156" height="156">
         </a>
-        <nav class="flex flex-1 items-center justify-center gap-x-10">
-            <div class="menu flex items-center justify-center gap-x-2 cursor-pointer relative">
-                <span class="transition-colors font-proxima-nova-regular text-base text-gray hover:text-black text-left">Product</span>
+        <nav class="flex items-center justify-center flex-1 gap-x-10">
+            <div class="relative flex items-center justify-center cursor-pointer menu gap-x-2">
+                <span class="text-base text-left transition-colors font-proxima-nova-regular text-gray hover:text-black">Product</span>
                 <img src="/images/path.svg" alt="path arrow" width="12" height="12">
                 <div class="invisible absolute w-[320px] h-auto p-4 top-9 bg-white drop-shadow-2xl">
                     <article class="w-full h-auto">
-                        <div class="max-w-full px-2 py-6 mx-auto flex flex-col items-start justify-center gap-y-4 border-b border-b-gray/20">
-                            <h2 class="font-amergo-bt text-2xl text-left text-black font-medium">Bonsai Workflow</h2>
+                        <div class="flex flex-col items-start justify-center max-w-full px-2 py-6 mx-auto border-b gap-y-4 border-b-gray/20">
+                            <h2 class="text-2xl font-medium text-left text-black font-amergo-bt">Bonsai Workflow</h2>
                             <p class="font-proxima-nova-regular text-lg leading-6 text-left text-gray font-normal [text-wrap: balance]">Look professional, win more clients and manage your business from one place</p>
                         </div>
                     </article>
                     <article class="w-full h-auto">
                         <a href="a">
-                            <div class="max-w-full px-2 py-6 mx-auto flex flex-col items-start justify-center gap-y-4 border-b border-b-gray/20">
-                                <h2 class="font-amergo-bt text-2xl text-left text-black font-medium">Bonsai Tax</h2>
+                            <div class="flex flex-col items-start justify-center max-w-full px-2 py-6 mx-auto border-b gap-y-4 border-b-gray/20">
+                                <h2 class="text-2xl font-medium text-left text-black font-amergo-bt">Bonsai Tax</h2>
                                 <p class="font-proxima-nova-regular text-lg leading-6 text-left text-gray font-normal [text-wrap: balance]">Track expenses, maximize tax write-offs, and estimate taxes without the headache</p>
                             </div>
                         </a>
                     </article>
                     <article class="w-full h-auto">
                         <a href="b">
-                            <div class="max-w-full px-2 py-6 mx-auto flex flex-col items-start justify-center gap-y-4">
-                                <h2 class="font-amergo-bt text-2xl text-left text-black font-medium">Bonsai Cash</h2>
+                            <div class="flex flex-col items-start justify-center max-w-full px-2 py-6 mx-auto gap-y-4">
+                                <h2 class="text-2xl font-medium text-left text-black font-amergo-bt">Bonsai Cash</h2>
                                 <p class="font-proxima-nova-regular text-lg leading-6 text-left text-gray font-normal [text-wrap: balance]">Bonsai’s all-in-one financial hub: No fees and lightning fast payouts</p>
                             </div>
                         </a>
                     </article>
                 </div>
             </div>
-            <div class="menu flex items-center justify-center gap-x-2 cursor-pointer relative">
-                <span class="transition-colors font-proxima-nova-regular text-base text-gray hover:text-black text-left">Templates</span>
+            <div class="relative flex items-center justify-center cursor-pointer menu gap-x-2">
+                <span class="text-base text-left transition-colors font-proxima-nova-regular text-gray hover:text-black">Templates</span>
                 <img src="/images/path.svg" alt="path arrow" width="12" height="12">
                 <div class="invisible absolute w-[640px] h-auto p-4 top-9 -left-32 bg-white drop-shadow-2xl flex items-center justify-between">
                     <TemplateMenuList />
-                    <div class="w-3/5 h-auto flex flex-col items-start justify-start">
-                        <h2 class="font-amergo-bt text-2xl font-medium text-black text-left mt-2 mb-8">Featured Contract Templates</h2>
-                        <ul class="w-full flex flex-col items-start justify-between gap-y-4">
-                            <li class="border border-gray/20 px-8 py-6 w-full flex items-center justify-center">
-                                <span class="text-base font-proxima-nova-light font-light text-center text-black">Free Contract Maker</span>
+                    <div class="flex flex-col items-start justify-start w-3/5 h-auto">
+                        <h2 class="mt-2 mb-8 text-2xl font-medium text-left text-black font-amergo-bt">Featured Contract Templates</h2>
+                        <ul class="flex flex-col items-start justify-between w-full gap-y-4">
+                            <li class="flex items-center justify-center w-full px-8 py-6 border border-gray/20">
+                                <span class="text-base font-light text-center text-black font-proxima-nova-light">Free Contract Maker</span>
                             </li>
-                            <li class="border border-gray/20 px-8 py-6 w-full flex items-center justify-center">
-                                <span class="text-base font-proxima-nova-light font-light text-center text-black">Social Media Manager Contract Template</span>
+                            <li class="flex items-center justify-center w-full px-8 py-6 border border-gray/20">
+                                <span class="text-base font-light text-center text-black font-proxima-nova-light">Social Media Manager Contract Template</span>
                             </li>
-                            <li class="border border-gray/20 px-8 py-6 w-full flex items-center justify-center">
-                                <span class="text-base font-proxima-nova-light font-light text-center text-black">Graphic Design Contract Template</span>
+                            <li class="flex items-center justify-center w-full px-8 py-6 border border-gray/20">
+                                <span class="text-base font-light text-center text-black font-proxima-nova-light">Graphic Design Contract Template</span>
                             </li>
-                            <li class="border border-gray/20 px-8 py-6 w-full flex items-center justify-center">
-                                <span class="text-base font-proxima-nova-light font-light text-center text-black">Digital Marketing Contract Template</span>
+                            <li class="flex items-center justify-center w-full px-8 py-6 border border-gray/20">
+                                <span class="text-base font-light text-center text-black font-proxima-nova-light">Digital Marketing Contract Template</span>
                             </li>
                         </ul>
-                        <a href="" class="mt-4 mx-auto text-base text-green font-proxima-nova-semibold font-semibold">See all templates</a>
+                        <a href="" class="mx-auto mt-4 text-base font-semibold text-green font-proxima-nova-semibold">See all templates</a>
                     </div>
                 </div>
             </div>
             <div class="flex items-center justify-center cursor-pointer">
-                <a href="" class="transition-colors font-proxima-nova-regular text-base text-gray hover:text-black text-left">Pricing</a>
+                <a href="" class="text-base text-left transition-colors font-proxima-nova-regular text-gray hover:text-black">Pricing</a>
             </div>
             <div class="flex items-center justify-center cursor-pointer">
-                <a href="" class="transition-colors font-proxima-nova-regular text-base text-gray hover:text-black text-left">Reviews</a>
+                <a href="" class="text-base text-left transition-colors font-proxima-nova-regular text-gray hover:text-black">Reviews</a>
             </div>
         </nav>
         <div class="flex items-center justify-center gap-x-3">
-            <button class="w-28 h-10 rounded transition-colors bg-white border border-green text-green font-proxima-nova-semibold text-sm font-semibold uppercase hover:bg-green/90 hover:text-white">Log in</button>
-            <button class="w-28 h-10 transition-colors rounded bg-green/90 text-white font-proxima-nova-semibold text-sm font-semibold uppercase hover:bg-green">Start free</button>
+            <button class="h-10 text-sm font-semibold uppercase transition-colors bg-white border rounded w-28 border-green text-green font-proxima-nova-semibold hover:bg-green/90 hover:text-white">Log in</button>
+            <button class="h-10 text-sm font-semibold text-white uppercase transition-colors rounded w-28 bg-green/90 font-proxima-nova-semibold hover:bg-green">Start free</button>
         </div>
     </div>
 </header>
