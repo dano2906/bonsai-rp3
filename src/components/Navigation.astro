@@ -36,10 +36,10 @@ import TemplateMenuList from "./TemplateMenuList.astro";
                     </article>
                 </div>
             </div>
-            <div class="flex items-center justify-center gap-x-2 cursor-pointer relative">
+            <div class="menu flex items-center justify-center gap-x-2 cursor-pointer relative">
                 <span class="transition-colors font-proxima-nova-regular text-base text-gray hover:text-black text-left">Templates</span>
                 <img src="/images/path.svg" alt="path arrow" width="12" height="12">
-                <div class="absolute w-[640px] h-auto p-4 top-9 -left-32 bg-white drop-shadow-2xl flex items-center justify-between">
+                <div class="invisible absolute w-[640px] h-auto p-4 top-9 -left-32 bg-white drop-shadow-2xl flex items-center justify-between">
                     <TemplateMenuList />
                     <div class="w-3/5 h-auto flex flex-col items-start justify-start">
                         <h2 class="font-amergo-bt text-2xl font-medium text-black text-left mt-2 mb-8">Featured Contract Templates</h2>
@@ -76,12 +76,15 @@ import TemplateMenuList from "./TemplateMenuList.astro";
 </header>
 
 <script>
-    let menu = document.querySelector(".menu");
-    let child = document.querySelector(".menu div")
-    menu?.addEventListener("mouseenter",()=>{
-        child?.classList.remove("invisible");
-    })
-    menu?.addEventListener("mouseleave",()=>{
-        child?.classList.add("invisible");
+    let menus = document.querySelectorAll(".menu");
+    menus.forEach((menu)=>{
+        menu?.addEventListener("mouseenter",()=>{
+            let child = menu.querySelector("div");
+            child?.classList.remove("invisible");
+        })
+        menu?.addEventListener("mouseleave",()=>{
+            let child = menu.querySelector("div");
+            child?.classList.add("invisible");
+        })
     })
 </script>
