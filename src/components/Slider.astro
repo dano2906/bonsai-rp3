@@ -1,0 +1,27 @@
+<div class="flex items-center justify-center h-auto w-96 gap-x-6">
+    <h2 class="text-lg font-semibold tracking-wider text-left transition-all text-black/80 font-proxima-nova-semibold" id="month">MONTHLY</h2>
+    <div class="flex items-center justify-end h-8 w-14 p-0.5 bg-green rounded-3xl" id="parent-slider">
+        <div class="transition-all bg-white cursor-pointer h-7 w-7 rounded-3xl" id="slider"></div>
+    </div>
+    <h2 class="relative w-32 text-sm font-semibold tracking-wider text-left transition-all font-proxima-nova-regulat text-gray" id="year">YEARLY
+        <img src="/images/free.svg" alt="Free" width="480" height="220" class="absolute right-8 bottom-3">
+    </h2>
+</div>
+
+<script>
+    import { isYearly } from '../store/billingStore';
+    const slider = document.querySelector('#slider')
+    const parent_slider = document.querySelector('#parent-slider')
+    const year = document.querySelector('#year')
+    const month = document.querySelector('#month')
+    slider?.addEventListener("click",()=>{
+        isYearly.set(!isYearly.get())
+    })
+    isYearly.subscribe((yearly)=>{
+        if(yearly) {
+            parent_slider?.classList.replace("justify-start","justify-end")
+        } else {
+            parent_slider?.classList.replace("justify-end","justify-start")
+        }
+    })
+</script>

@@ -1,16 +1,20 @@
 ---
+import Slider from '@components/Slider.astro';
 import Layout from '../layouts/Layout.astro';
 import Navigation from '@components/Navigation.astro';
+import Pricing from '@components/Pricing.astro';
+
 ---
 
 <Layout>
 	<div class="w-screen h-auto">
         <Navigation />
-        <main class="w-full h-auto py-40 mx-auto">
-            <div class="flex items-center justify-center w-full h-auto">
-                <h1 class="text-4xl font-normal text-left text-gray font-amergo-bt">Plans & Pricing</h1>
-                
+        <main class="w-full h-auto py-48 mx-auto">
+            <div class="flex items-center justify-center w-full h-auto gap-x-14">
+                <h1 class="text-5xl font-normal text-left text-gray font-amergo-bt">Plans & Pricing</h1>
+                <Slider />
             </div>
+            <Pricing />
         </main>
     </div>
 
