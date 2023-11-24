@@ -6,6 +6,7 @@ import Pricing from '@components/Pricing.astro';
 import CustomizeWorkflow from '@components/CustomizeWorkflow.astro';
 import Promo from '@components/Promo.astro';
 import QA from '@components/QA.astro';
+import Footer from '@components/Footer.astro';
 ---
 
 <Layout>
@@ -21,5 +22,9 @@ import QA from '@components/QA.astro';
         <CustomizeWorkflow />
         <Promo />
         <QA />
+        <Footer />
+        <footer class="flex items-center justify-center w-full h-auto p-3">
+            <span class="text-base font-light text-center font-amergo-bt text-gray">Developed by <a href="https://github.com/dano2906" class="transition-all text-green hover:underline-offset-1 hover:underline hover:decoration-green">Dano.</a></span>
+        </footer>
     </div>
 </Layout>
